@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-container, .dashboard-container, .project-details-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #228b22; /* Forest green for refreshing feel */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #20b2aa; /* Light sea green */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #008b8b; /* Darker teal */
+  }
+  
+  .project-list, .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list li, .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .spinner {
+    text-align: center;
+    color: #20b2aa;
+    font-size: 18px;
+  }
+  
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .toast.error {
+    background-color: #ff4500; /* Orange red */
+  }
+  
+  /* Mobile-friendly */
+  @media (max-width: 600px) {
+    .auth-container, .dashboard-container, .project-details-container {
+      margin: 20px;
+      padding: 10px;
+    }
+  }
